@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Hello from './component/hello'
+import Header from './component/content-head/Header'
+import Body from './component/content-body/Body'
 
 class App extends React.Component{
 
     render() {
         return (
             <div>
-                <Hello/>
+                <Header/>
+                <Body/>
             </div>
         );
     }

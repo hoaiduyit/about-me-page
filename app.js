@@ -16,7 +16,7 @@ const compiler = webpack({
 
     devServer: {
         inline: true,
-        port: 8080
+        port: 9090
     },
 
     module: {
@@ -28,6 +28,10 @@ const compiler = webpack({
                 options: {
                     presets: ['es2015', 'react', 'stage-2']
                 }
+            },
+            {
+                test: /\.css$/,
+                use: [ 'style-loader', 'css-loader' ]
             }
         ]
     }
@@ -48,5 +52,5 @@ app.use(function(req, res, next){
 });
 app.use(express.static(path.join(__dirname, '.')));
 
-http.createServer(app).listen(8080);
+http.createServer(app).listen(9090);
 console.log('Server is running');

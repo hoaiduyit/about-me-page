@@ -1,0 +1,56 @@
+html,body {
+    height:100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+body{
+    /*background: url(../images/usarmy.jpg) 50% 0 no-repeat;*/
+}
+.circle-btn{
+    width: 83px;
+    height: 83px;
+    color: #0f0f0f;
+    background: transparent;
+    padding: 1px 6px;
+    border-radius: 50%;
+    border-width: 0;
+    border: 1px solid black;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.circle-btn:hover{
+    background: #cc0000;
+    color: white;
+}
+.small-circle-btn{
+    width: 32px;
+    height: 32px;
+    color: #0f0f0f;
+    background: transparent;
+    padding: 1px 6px;
+    border-radius: 50%;
+    border-width: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.small-circle-btn:hover{
+    background: white;
+    color: #cc0000;
+}
+.navbar-right{
+    padding-top: 25px;
+}
+.thumbnail{
+    width: 168px;
+    height: 211px;
+}
+.thumbnail>img{
+    width: 168px;
+    height: 200px;
+}
+.progress-bar{
+    text-align: left;
+    padding-left: 10px;
+}
