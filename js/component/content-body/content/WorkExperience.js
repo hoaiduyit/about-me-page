@@ -1,6 +1,6 @@
 import React from 'react';
 import {Nav, NavItem} from 'react-bootstrap';
-import TextWithLabel from './TextWithLabel'
+import TextWithLabel from '../../common/ui/TextWithLabel'
 
 class WorkExperience extends React.Component{
 

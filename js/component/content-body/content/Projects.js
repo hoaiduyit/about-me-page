@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import AnchorWithLabel from './AnchorWithLabel'
+import AnchorWithLabel from '../../common/ui/AnchorWithLabel'
 
 class Projects extends React.Component{
 

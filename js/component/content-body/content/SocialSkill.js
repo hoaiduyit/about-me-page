@@ -1,5 +1,5 @@
 import React from 'react';
-import ProgressBarWithLabel from './ProgressBarWithLabel';
+import ProgressBarWithLabel from '../../common/ui/ProgressBarWithLabel';
 import PropTypes from 'prop-types';
 
 class SocialSkill extends React.Component{

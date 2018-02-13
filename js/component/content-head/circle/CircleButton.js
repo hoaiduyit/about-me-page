@@ -12,10 +12,10 @@ class CircleButton extends React.Component{
     };
 
     render() {
-        const {icon, style, btnName} = this.props;
+        const {icon, style, btnName, onClick} = this.props;
         return (
             <div>
-                <Button className={btnName}>
+                <Button className={btnName} onClick={onClick}>
                     <i style={style} className={icon}/>
                 </Button>
             </div>
