@@ -5,6 +5,7 @@ import CodingSkill from './CodingSkill'
 import SocialSkill from './SocialSkill'
 import Hobbies from './Hobbies'
 import WorkExperience from './WorkExperience'
+import Project from './Projects'
 
 class AboutMe extends React.Component{
 
@@ -84,7 +85,8 @@ class AboutMe extends React.Component{
                         <WorkExperience/>
                     </Col>
                     <Col xs={6} md={6}>
-
+                        <h1>MY PROJECTS...</h1>
+                        <Project/>
                     </Col>
                 </Row>
             </div>

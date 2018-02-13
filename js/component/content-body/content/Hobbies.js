@@ -12,14 +12,22 @@ class Hobbies extends React.Component{
     render() {
 
         const {display, className} = this.props;
+        const style = {
+            border: "1px solid",
+            borderRadius: "4px",
+            paddingTop: "20px",
+            display: display
+        };
 
         return (
-            <div style={{display: display}} data-wow-delay="1s" className={className}>
-                <h2>WHAT I'M LOVE...</h2>
-                <div>
-                    <ProgressBarWithLabel text="Coding" progress={100}/>
-                    <ProgressBarWithLabel text="Play video-game" progress={100}/>
-                    <ProgressBarWithLabel text="Read manga/comic book" progress={100}/>
+            <div style={style} data-wow-delay="1s" className={className}>
+                <div style={{padding: "10px 10px"}}>
+                    <h2>WHAT I'M LOVE...</h2>
+                    <div>
+                        <ProgressBarWithLabel text="Coding" progress={100}/>
+                        <ProgressBarWithLabel text="Play video-game" progress={100}/>
+                        <ProgressBarWithLabel text="Read manga/comic book" progress={100}/>
+                    </div>
                 </div>
             </div>
         );

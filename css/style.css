@@ -6,6 +6,11 @@ html,body {
 body{
     /*background: url(../images/usarmy.jpg) 50% 0 no-repeat;*/
 }
+.jumbotron{
+    background: url("../images/cover.jpg") 0 35%;
+    /*background-position: center;*/
+    background-size: cover;
+}
 .circle-btn{
     width: 83px;
     height: 83px;
@@ -53,4 +58,24 @@ body{
 .progress-bar{
     text-align: left;
     padding-left: 10px;
+}
+.copyright .col-sm-8 {
+    width: 60%;
+}
+.copyright .col-sm-2 {
+    width: 20%;
+}
+.copyright {
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #cc0000;
+}
+.copyright a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.copyright p {
+    font-size: 20px;
+    text-align: left;
+    color: white;
 }
