@@ -13,7 +13,7 @@ class Introduce extends React.Component{
                     A FEW WORDS ABOUT ME
                 </h2>
                 <Row>
-                    <Col sm={5}>
+                    <Col sm={5} className="avatar">
                         <Thumbnail src="../../../images/usarmy.jpg"/>
                     </Col>
                     <Col sm={7}>
@@ -21,8 +21,10 @@ class Introduce extends React.Component{
                             I'm Che Hoai Duy, a web front-end developer 22 years old.
                             <br/>
                             <br/>
-                            My job is create or build website so that it is functional and friendly to user. I'm using Jquery or ReactJs to create a new website.
-                            Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way.
+                            My job is create or build website so that it is functional and friendly to user.
+                            I'm using Jquery or ReactJs to create a new website.
+                            Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use.
+                            My aim is to bring across your message and identity in the most creative way.
                             <br/>
                             I'm ready to learn new things and I can resolve problem in a short time.
                         </p>

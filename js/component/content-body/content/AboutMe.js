@@ -56,7 +56,7 @@ class AboutMe extends React.Component{
     render() {
         return (
             <div style={{paddingBottom: "50px"}}>
-                <Grid>
+                <Grid style={{paddingBottom: "60px"}}>
                     <Row>
                         <Col xs={6} md={6}>
                             <Introduce/>
@@ -80,12 +80,14 @@ class AboutMe extends React.Component{
                     </Row>
                 </Grid>
                 <hr style={{backgroundColor: "#fff", borderTop: "2px dotted #8c8b8b"}}/>
-                <Row>
+                <Row style={{paddingTop: "30px"}}>
                     <Col xs={6} md={6}>
                         <WorkExperience/>
                     </Col>
                     <Col xs={6} md={6}>
-                        <h1>MY PROJECTS...</h1>
+                        <div style={{textAlign: "center"}}>
+                            <h1>MY PROJECTS...</h1>
+                        </div>
                         <Project/>
                     </Col>
                 </Row>
