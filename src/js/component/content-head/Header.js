@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Navbar, Nav, NavItem} from 'react-bootstrap';
-import CircleButton from './circle/CircleButton'
+import {Navbar, Nav, NavItem, Tooltip} from 'react-bootstrap';
+import CircleButton from '../common/ui/CircleButton';
 
 class Header extends React.Component{
 
@@ -11,6 +11,14 @@ class Header extends React.Component{
 
     handleShowModalDialog = () => {
         this.props.showModalDialog();
+    };
+
+    mailToMe = () => {
+        return window.open("https://mail.google.com/mail/?view=cm&fs=1&to=hoaiduy2503@gmail.com");
+    };
+
+    openGitHub = () => {
+        return window.open("https://github.com/hoaiduyit")
     };
 
     render() {
@@ -23,19 +31,52 @@ class Header extends React.Component{
             fontSize: "21px"
         };
 
+        const profileTooltip = (
+            <Tooltip id="profile">
+                <strong>My Profile</strong>
+            </Tooltip>
+        );
+
+        const mailToMe = (
+            <Tooltip id="mailTo">
+                <strong>Mail to me...</strong>
+            </Tooltip>
+        );
+
+        const github = (
+            <Tooltip id="github">
+                <strong>My GitHub</strong>
+            </Tooltip>
+        );
+
         return (
            <Navbar>
                <Nav>
                    <NavItem>
-                       <CircleButton icon="fa fa-user" style={style} btnName="circle-btn" onClick={this.handleShowModalDialog}/>
+                       <CircleButton
+                           icon="fa fa-user"
+                           style={style}
+                           btnName="circle-btn"
+                           onClick={this.handleShowModalDialog}
+                           overlay={profileTooltip}/>
                    </NavItem>
                    <NavItem>
-                       <CircleButton icon="fa fa-envelope" style={style} btnName="circle-btn"/>
+                       <CircleButton
+                           icon="fa fa-envelope"
+                           style={style}
+                           btnName="circle-btn"
+                           onClick={this.mailToMe}
+                           overlay={mailToMe}/>
                    </NavItem>
                </Nav>
                <Nav pullRight>
                    <NavItem>
-                       <CircleButton btnName="small-circle-btn" icon="fa fa-github" style={styleSmall}/>
+                       <CircleButton
+                           btnName="small-circle-btn"
+                           icon="fa fa-github"
+                           style={styleSmall}
+                           onClick={this.openGitHub}
+                           overlay={github}/>
                    </NavItem>
                </Nav>
            </Navbar>

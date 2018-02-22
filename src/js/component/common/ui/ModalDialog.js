@@ -38,7 +38,7 @@ class ModalDialog extends React.Component{
             <div>
                 <Modal show={this.state.show} onHide={this.handleOnCloseModal}>
                     <ModalHeader closeButton>
-                        <ModalTitle>
+                        <ModalTitle style={{textAlign: "center", fontSize: "20px"}}>
                             {title}
                         </ModalTitle>
                     </ModalHeader>

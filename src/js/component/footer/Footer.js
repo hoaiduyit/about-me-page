@@ -2,6 +2,10 @@ import React from 'react';
 
 class Footer extends React.Component{
 
+    openThisProject = () => {
+        return window.open("https://github.com/hoaiduyit/about-me-page");
+    };
+
     render() {
         return (
             <div className="copyright container">
@@ -9,7 +13,7 @@ class Footer extends React.Component{
                     <p>Copyright © 2018 Che Hoai Duy</p>
                 </div>
                 <div className="col-sm-2">
-                    <a href="https://github.com/hoaiduyit/about-me-page"><p>Project source code at <li className="fa fa-github"/></p></a>
+                    <a onClick={this.openThisProject}><p>Project source code at <li className="fa fa-github"/></p></a>
                 </div>
                 <div className="col-sm-2">
                     <a><p>Make with my love!!!</p></a>
