@@ -7,7 +7,7 @@ body{
     /*background: url(../images/usarmy.jpg) 50% 0 no-repeat;*/
 }
 .jumbotron{
-    background: url("../images/cover.jpg") 0 35%;
+    background: url("../src/images/usarmy.jpg") 0 35%;
     /*background-position: center;*/
     background-size: cover;
     margin: 60px 0;
