@@ -14,7 +14,14 @@ class Header extends React.Component{
     };
 
     mailToMe = () => {
-        return window.open("https://mail.google.com/mail/?view=cm&fs=1&to=hoaiduy2503@gmail.com");
+        const userEmail = "hoaiduy2503@gmail.com";
+        return window.open("https://mail.google.com/mail/?view=cm&fs=1&to=" + userEmail);
+    };
+
+    skypeToMe = () => {
+        const userSkype = "hoaiduy2503";
+        const skypeLink = "skype:live:" + userSkype + "?chat";
+        return window.location = skypeLink;
     };
 
     openGitHub = () => {
@@ -43,6 +50,12 @@ class Header extends React.Component{
             </Tooltip>
         );
 
+        const skypeToMe = (
+            <Tooltip id="mailTo">
+                <strong>Skype to me...</strong>
+            </Tooltip>
+        );
+
         const github = (
             <Tooltip id="github">
                 <strong>My GitHub</strong>
@@ -67,6 +80,14 @@ class Header extends React.Component{
                            btnName="circle-btn"
                            onClick={this.mailToMe}
                            overlay={mailToMe}/>
+                   </NavItem>
+                   <NavItem>
+                       <CircleButton
+                           icon="fa fa-skype"
+                           style={style}
+                           btnName="circle-btn"
+                           onClick={this.skypeToMe}
+                           overlay={skypeToMe}/>
                    </NavItem>
                </Nav>
                <Nav pullRight>
