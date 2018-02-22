@@ -18,7 +18,7 @@ class Introduce extends React.Component{
                     </Col>
                     <Col sm={7}>
                         <p>
-                            I'm Che Hoai Duy, a web front-end developer 22 years old.
+                            I'm Che Hoai Duy, a web front-end developer.
                             <br/>
                             <br/>
                             My job is create or build website so that it is functional and friendly to user.

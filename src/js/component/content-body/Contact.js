@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ModalDialog from '../common/ui/ModalDialog';
-import Introduce from './content/Introduce';
+import MyProfile from './content/MyProfile';
 
 class Contact extends React.Component{
 
@@ -13,7 +13,7 @@ class Contact extends React.Component{
         const {isShowing} = this.props;
 
         return (
-            <ModalDialog title="My Contact Detail" component={<Introduce/>} isShow={isShowing}/>
+            <ModalDialog title="My Contact Detail" component={<MyProfile/>} isShow={isShowing}/>
         );
     }
 }
