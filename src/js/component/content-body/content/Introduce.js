@@ -14,7 +14,7 @@ class Introduce extends React.Component{
                 </h2>
                 <Row>
                     <Col sm={5} className="avatar">
-                        <Thumbnail src="../../../src/images/usarmy.jpg"/>
+                        <Thumbnail />
                     </Col>
                     <Col sm={7}>
                         <p>
