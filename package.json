@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "build": "nodemon app.js",
+    "start": "./node_modules/.bin/webpack -p & node app.js",
+    "build": "./node_modules/.bin/webpack -p & nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,7 +25,6 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-standalone": "^6.26.0",
-    "body-parser": "^1.18.2",
     "css-loader": "^0.28.9",
     "express": "^4.16.2",
     "nodemon": "^1.14.12",
