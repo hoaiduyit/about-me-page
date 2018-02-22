@@ -51,7 +51,7 @@ class Header extends React.Component{
         );
 
         const skypeToMe = (
-            <Tooltip id="mailTo">
+            <Tooltip id="skypeTo">
                 <strong>Skype to me...</strong>
             </Tooltip>
         );
