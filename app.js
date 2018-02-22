@@ -8,7 +8,7 @@ const express = require('express'),
 const app = express();
 
 const compiler = webpack({
-    entry: './js/app.js',
+    entry: './src/js/app.js',
     output: {
         path:'/',
         filename: 'index.js',

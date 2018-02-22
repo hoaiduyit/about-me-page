@@ -17,8 +17,8 @@ class Projects extends React.Component{
         return (
             <div>
                 <Slider {...settings}>
-                    <div><AnchorWithLabel src="../../../images/tap.png" url="https://tap.finance/"/></div>
-                    <div><AnchorWithLabel src="../../../images/merchantweb.png" url="http://portal-uat.tap.finance/merchant/"/></div>
+                    <div><AnchorWithLabel src="../../../../src/images/tap.png" url="https://tap.finance/"/></div>
+                    <div><AnchorWithLabel src="../../../../src/images/merchantweb.png" url="http://portal-uat.tap.finance/merchant/"/></div>
                 </Slider>
             </div>
         );
