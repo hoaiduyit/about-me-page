@@ -57,7 +57,7 @@ class Header extends React.Component{
         );
 
         const github = (
-            <Tooltip id="github">
+            <Tooltip id="gitHub">
                 <strong>My GitHub</strong>
             </Tooltip>
         );
