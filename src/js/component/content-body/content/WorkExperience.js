@@ -51,9 +51,11 @@ class WorkExperience extends React.Component{
                 <h1>MY WORK EXPERIENCE</h1>
                 <Nav bsStyle="tabs" onSelect={e => this.onChangeView(e)}>
                     <NavItem eventKey="1" active={this.state.activeText1}>
+                        <i className="fa fa-calendar"/>&nbsp;
                         MAR 2017 - DEC 2017
                     </NavItem>
                     <NavItem eventKey="2" active={this.state.activeText2}>
+                        <i className="fa fa-calendar"/>&nbsp;
                         DEC 2017 - FEB 2017
                     </NavItem>
                 </Nav>

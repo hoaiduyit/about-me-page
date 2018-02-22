@@ -64,12 +64,15 @@ class AboutMe extends React.Component{
                         <Col xs={6} md={6}>
                             <Nav bsStyle="tabs" onSelect={e => this.onChangeView(e)}>
                                 <NavItem eventKey="1" active={this.state.activeCode}>
+                                    <i className="fa fa-code"/>&nbsp;
                                     Coding skill
                                 </NavItem>
                                 <NavItem eventKey="2" active={this.state.activeSocial}>
+                                    <i className="fa fa-comments"/>&nbsp;
                                     Communicate skill
                                 </NavItem>
                                 <NavItem eventKey="3" active={this.state.activeHobbies}>
+                                    <i className="fa fa-heart"/>&nbsp;
                                     Hobbies
                                 </NavItem>
                             </Nav>
