@@ -9,14 +9,14 @@ class Footer extends React.Component{
     render() {
         return (
             <div className="copyright container">
-                <div className="col-sm-8">
+                <div className="col-sm-6">
                     <p>Copyright © 2018 Che Hoai Duy</p>
                 </div>
-                <div className="col-sm-2">
+                <div className="col-sm-3">
                     <a onClick={this.openThisProject}><p>Project source code at <li className="fa fa-github"/></p></a>
                 </div>
-                <div className="col-sm-2">
-                    <a><p>Make with my love!!!</p></a>
+                <div className="col-sm-3">
+                    <p>Make with my love!!!</p>
                 </div>
             </div>
         );

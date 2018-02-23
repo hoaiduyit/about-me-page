@@ -95,7 +95,8 @@ body{
 }
 .copyright {
     width: 100%;
-    padding: 20px 100px;
+    padding-top: 10px;
+    padding-left: 100px;
     background-color: #337ab7;
 }
 .copyright a {
