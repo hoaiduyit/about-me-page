@@ -27,7 +27,7 @@ class CodingSkill extends React.Component{
                         <ProgressBarWithLabel text="Java" progress={70}/>
                         <ProgressBarWithLabel text="JavaScript" progress={78}/>
                         <ProgressBarWithLabel text="ReactJs" progress={75}/>
-                        <ProgressBarWithLabel text="OOP" progress={67}/>
+                        <ProgressBarWithLabel text="OOP" progress={54}/>
                         <ProgressBarWithLabel text="HTML" progress={85}/>
                         <ProgressBarWithLabel text="CSS" progress={85}/>
                     </div>
